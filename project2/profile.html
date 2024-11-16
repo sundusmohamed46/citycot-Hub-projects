@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Profile</title>
+  <style>
+    /* General reset for margins and padding */
+    body, h1, p {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Set background color and text color */
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Container for the profile card */
+    .profile-container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Profile image */
+    .profile-img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    /* Profile name style */
+    .profile-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    /* Profile details (age, location, etc.) */
+    .profile-details {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #7f8c8d;
+    }
+
+    .profile-details span {
+      display: block;
+      margin-top: 8px;
+    }
+
+    /* Button for contact or social media */
+    .contact-button {
+      margin-top: 20px;
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .contact-button:hover {
+      background-color: #2980b9;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <!-- Profile Picture -->
+    <img src="WhatsApp Image 2024-06-11 at 19.08.29_64e6ebb5.jpg" alt="Profile Picture" class="profile-img">
+    
+    <!-- Profile Name -->
+    <div class="profile-name">sundus</div>
+
+    <!-- Profile Details -->
+    <div class="profile-details">
+      <span><strong>Age:</strong> 21</span>
+      <span><strong>Location:</strong>somali /puntland/bosasoo</span>
+      <span><strong>Occupation:</strong> Web Developer</span>
+      <span><strong>Interests:</strong> Coding, Music, cooking</span>
+    </div>
+
+    <!-- Contact Button (e.g., link to email or social media) -->
+    <button class="contact-button" onclick="window.location.href='mailto:your-email@example.com'">
+      Contact Me
+    </button>
+  </div>
+
+</body>
+</html>

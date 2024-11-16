@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Portfolio</title>
+    <style>
+        /* Reset the default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #fff; 
+    color: hwb(0 6% 94%); 
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.header .logo img {
+    width: 30px; 
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+nav a {
+    color: #191717;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+nav a:hover {
+    color: hwb(0 90% 9%); 
+}
+
+nav a:not(:last-child)::after {
+    content: '/';
+    color: hsl(0, 3%, 8%);
+    margin-left: 10px;
+}
+
+
+.main-content {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+.review {
+    display: flex;
+text-align: center;
+width: 30%;
+   
+    padding: 20px;
+}
+
+
+.review {
+    
+    display: inline-block;
+    padding: 40px;
+    margin-left: 30px;
+    border: 1px solid hsl(0, 100%, 1%);
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.review p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #0c0c0c;
+
+}
+
+.review em {
+    display: block;            
+    font-style: italic;
+    margin-top: 10px;
+    color: #888;
+}
+
+  
+
+/* Footer Styles */
+footer {
+    
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}  
+</style>
+   
+       
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <img src="c:\Users\smrc\Downloads\black-check-box.png"  alt="sundus">
+        </div>
+        <nav>
+            <a href="#">Home  </a>
+            <a href="#">Projects </a>
+            <a href="#">Articles </a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+        <h1><b><i>Frontend Developer</i></b></h1>
+        <p>HTML only with proper layout, no styling</p><br><br>
+        <table border="2px" style="border-collapse: collapse;  ">
+            <tr>
+                <td  colspan="1" >
+                  <h3> <b>Projects</b><br></h3>
+                              <p>  HTML Only Portfolio</p>
+                                
+                </td>
+                <td rowspan="2"  style="padding: 10px;">
+                    <h3>Work Experience</h3>
+                        <p style="margin-right: 10%;">roadmap.sh<br>Solved all the frontend projects<br>
+                        <a href="profile.html">Visit my Profile</a></p>
+                </td>
+                <td rowspan="6" >
+                   <p style="margin-right: 20%;"> 
+                    <h3>Education</h3>
+                           <br> Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon
+                                Organized 30 sessions.<br>
+                            Courses I took:<br>
+                            
+                               <p style="margin-right: 20px;"> -Object Oriented Programming<br>
+                    
+                                -Data Structures and Algorithms<br>
+                               -Web Engineering<br>
+                               -Artificial Intelligence<br>
+                               Human Computer Interaction
+                               Computer Graphics
+                                 Database Management Systems
+                                 Distributed Database Systems
+                              Discrete Mathematics
+                            
+                                </p>
+                                
+                            
+                </td>
+            </tr>
+            <tr>
+                <td style="margin-bottom: 20%;">
+                    <p>Calculator</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="margin-bottom: 0%;">
+                    <p>QUiz app</p>
+                </td>
+                <td rowspan="3" >
+                    <p style="margin-right: 20%  ; padding-top: 10%;">
+                     <p><strong>OpenSource Work</strong><br>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+                            <p><a href="https://github.com/sundusmohamed46">Visit my GitHub Profile</a></p>
+                            <br>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="1" ">
+                    <p> Countdown Timer</p>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4" >
+                    <p>Product Upcoming Page</p><br>
+                </td>
+            </tr>
+        </table><br>
+        
+
+          <section>
+            <h3><i>Reviews from my Teachers</i></h3>
+            <div class="review" style="margin-left: 30px;">
+                <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                <em>Jane Doe</em><br>
+                <span>Assistant Professor</span>
+            </div>
+            <div class="review">
+                <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                <em>Jane Doe</em><br>
+                <span>Assistant Professor</span>
+            </div>
+            <div class="review">
+                <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                <em>Jane Doe</em><br>
+                <span>Assistant Professor</span>
+            </div>
+        </section>
+           
+
+    <footer>
+        <p><i><b>&copy; all rights reserved 2025</b></i></p>
+    </footer>
+    </body>
+    </html>
