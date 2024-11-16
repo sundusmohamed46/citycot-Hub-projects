@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    max-width: 800px;
+    margin:auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+    text-align: center;
+    color: hsl(120, 10%, 4%);
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+  
+    display: block;
+}
+
+input[type="text"],
+input[type="number"],
+  
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: rgb(61, 163, 246);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(61, 163, 246);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color:rgb(61, 163, 246);
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+        </style>
+</head>
+<body>
+    <form>
+        <h1>Student Registration</h1>
+        <label for="name">student name:</label><br>
+        <input type="text" id="name" placeholder="Enter student name"><br>
+        <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age"  min="1" max="100"  placeholder="Enter age"><br>
+        <label for="Email">Email:</label><br>
+        <input type="text" id="Email" placeholder="Enter Email"><br>
+        <label for="phone">phone:</label><br>
+        <input type="text" id="phone" placeholder="Enter phone number"><br>
+        <label for="gender"> Gender:</label><br>
+        <select id="gender" name="gender">
+            <option value=""disabled selected>select gender</option>
+       <option value="male">male</option>
+       <option value="female">female</option>
+        </select><br>
+        <label for="course">Course :</label><br>
+        <select id="course" name="course">
+            <option value=""disabled selected>select course</option>
+       <option value="computer science">computer science</option>
+       <option value="acount">acount</option>
+       <option value="social work">social work</option>
+       <option value="accounting">accounting</option>
+        </select><br>
+        <input type="submit" value="save"><br>
+        <h1>Registered student</h1>
+        <table>
+            <tr>
+                <th>student_name</th>
+                <th>age</th>
+                <th>Email</th>
+                <th>phone</th>
+                <th>Gender</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>sundus</td>
+                <td>21</td>
+                <td>sundusmohamed641@gmail.com</td>
+                <td>+25256******</td>
+                <td>female</td>
+                <td>computer science</td>
+            </tr>
+            <tr>
+                <td>sundus</td>
+                <td>21</td>
+                <td>sundusmohamed641@gmail.com</td>
+                <td>+25256******</td>
+                <td>female</td>
+                <td>computer science</td>
+            </tr>
+        </table><br>
+        
+
+
+    </form>
+   
+    
+</body>
+</html>
